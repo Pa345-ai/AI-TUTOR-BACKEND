@@ -102,7 +102,7 @@ export default function Register() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="role">I am a</Label>
-              <Select value={formData.role} onValueChange={(value) => setFormData({ ...formData, role: value })}>
+              <Select value={formData.role} onValueChange={(value) => setFormData({ ...formData, role: value as "student" | "teacher" | "parent" })}>
                 <SelectTrigger id="role" data-testid="select-role">
                   <SelectValue />
                 </SelectTrigger>
