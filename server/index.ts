@@ -1,4 +1,3 @@
-import express from "express";
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 
@@ -69,3 +68,7 @@ app.use((req, res, next) => {
     console.log(`serving on port ${port}`);
   });
 })();
+
+function serveStatic(app: any) {
+  app.use(express.static('public'));
+}
