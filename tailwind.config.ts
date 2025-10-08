@@ -81,6 +81,11 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
+        gamification: {
+          xp: "hsl(45 95% 50%)",
+          badge: "hsl(270 70% 60%)",
+          streak: "hsl(15 90% 55%)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
